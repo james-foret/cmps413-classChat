@@ -397,6 +397,7 @@ class Client:
         # exit with <Ctrl> + <c> or <Ctrl> + <q>
         @kb.add("c-c")
         @kb.add("c-q")
+
         def _(event):
             event.app.exit()
 

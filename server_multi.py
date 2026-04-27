@@ -20,7 +20,7 @@ PORT = 8080
 # altering the same list at the same time.
 lock = threading.Lock()
 
-# This is the server, it extends the socketserver.TCPSever class
+# This is the server, it extends the socketserver.TCPServer class
 # socketserver.ThreadingMixIn allows for a new thread to be created when a new client joins
 # Handles the sending, logging, and receiving of messages and tracking active clients, this is the only instance of the server running.
 class ThreadedChatServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
